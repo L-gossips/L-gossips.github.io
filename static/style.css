@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #272343;
+}
+nav {
+  background: #bae8e8;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+nav a {
+  color: #272343f5;
+  text-decoration: none;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 5px;
+  margin: 10px;
+}
+section {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+section ul {
+  list-style: none;
+  padding: 0%;
+  width: 100%;
+}
+section ul li, #gossip {
+  width: 100%;
+  margin-bottom: 20px;
+  background: #e3f6f5;
+  color: #272343;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+section ul li a {
+  text-decoration: none;
+  color: #272343;
+}
+section ul li img, #gossip img {
+  border-radius: 50%;
+  width: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.comment-p {
+  font-size: 13px;
+}
+.post {
+  font-size: 15px;
+  width: 100%;
+}
+footer {
+  background: #bae8e8;
+  color: #272343;
+  text-align: center;
+  font-size: 15px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+    bottom: 0;
+}
+#post-btn {
+    background: #b5e8e8;
+  color: #272343;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  bottom: 15px;
+    right: 10px;
+    box-shadow: 0px 0px 10px 0px #7e9b9b82;
+}
+#post-btn a {
+  text-decoration: none;
+  color: #415676;
+  font-weight: bold;
+}
+#logo-letter{
+    font-size: 30px;
+    font-weight: bold;
+    color: #272343;
+    font-family: "Bad Script", cursive;
+    font-weight: 700;
+}
+#post-gossip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #415676;
+    background-color: #e3f6f5;
+    padding-top: 50%;
+    padding-bottom: 55%;
+    font-size: 30px;
+    margin: 0;
+}
+#post-gossip textarea{
+    width: 80%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: #b5e8e8;
+}
+#post-gossip button, #comment button{
+    background: #b5e8e8;
+    color: #272343;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#gossip{
+    margin-top: 20px;
+}
+#comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #415676;
+    background-color: #e3f6f5;
+    font-size: 30px;
+}
+#comment form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#comment textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: #b5e8e8;
+}
+#gossip-comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #415676;
+    font-size: 20px;
+    margin-top: 30px;
+}
+#gossip-comments ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+#gossip-comments ul li{
+    width: 100%;
+    margin-bottom: 10px;
+    background: #e3f6f5;
+    color: #272343;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+}
+#gossip-comments p{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+h3{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
