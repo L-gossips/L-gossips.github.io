@@ -21,4 +21,5 @@ export const dataService = {
     getAllGossips,
     createGossip,
     getGossipById,
+    deleteGossip
 }
