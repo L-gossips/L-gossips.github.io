@@ -30,11 +30,6 @@ async function onSubmit(e){
     title: formData.get("title"),
     description: formData.get("description"), 
   };
-
-    try {
         await dataService.createGossip(gossip);
         page.redirect("/");
-    } catch (error) {
-        alert("Error: " + error.message);
-  }
 }
