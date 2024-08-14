@@ -3,7 +3,8 @@ import { dataService } from "../service/dataService.js";
 
 export async function homeView(){
 const root = document.querySelector("main")
-const gossips = (await dataService.getAllGossips()).results
+let gossips = (await dataService.getAllGossips()).results
+gossips = gossips.reverse();
 const template = renderTemplate(gossips);
 render(template, root);
 }
