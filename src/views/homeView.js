@@ -4,6 +4,11 @@ import { dataService } from "../service/dataService.js";
 export async function homeView(){
 const root = document.querySelector("main")
 let gossips = (await dataService.getAllGossips()).results
+if(gossips.length >50){
+  for(let i = 0; i < 50; i++){
+    await dataService.deleteGossip(gossips[i].objectId)
+  }
+}
 gossips = gossips.reverse();
 const template = renderTemplate(gossips);
 render(template, root);
