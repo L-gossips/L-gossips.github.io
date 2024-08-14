@@ -22,13 +22,6 @@ async function request(method, url, data) {
       throw new Error(error.message);
     }
 
-    if(response.status === 204){
-      return response;
-    }
-    if(response.status === 500){
-      alert("Сървърът е претоварен. Изчакай малко и опитай отново.(Ако опитваш да публикуваш клюка, то тя се е качила. Моля, презареди страницата.)");
-      return
-    }
     // Check if response body is empty
     const text = await response.text();
     if (!text) {
