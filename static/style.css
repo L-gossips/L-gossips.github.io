@@ -77,10 +77,9 @@ footer {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
-  position: fixed; /* Stick the footer to the bottom */
+  position:static; /* Stick the footer to the bottom */
   bottom: 0; /* Align it to the bottom of the viewport */
   left: 0; /* Ensure it stays to the left of the viewport */
-  z-index: -1;
 }
 
 #post-btn {

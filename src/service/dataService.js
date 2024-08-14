@@ -14,12 +14,8 @@ async function createGossip(data){
 async function getGossipById(id){
     return await api.get(host + urls.getAllGossips + `/${id}`);
 }
-async function deleteGossip(id){
-    return await api.del(host + urls.getAllGossips + `/${id}`);
-}
 export const dataService = {
     getAllGossips,
     createGossip,
     getGossipById,
-    deleteGossip
 }
