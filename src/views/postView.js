@@ -26,11 +26,9 @@ async function onSubmit(e){
   const form = e.target;
   const formData = new FormData(form);
 
-  const user = navigator.userAgent;
-
   const gossip = {
     title: formData.get("title"),
-    description: formData.get("description"), user
+    description: formData.get("description")
   };
 
     try {
