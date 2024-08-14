@@ -26,12 +26,11 @@ async function onSubmit(e){
   const form = e.target;
   const formData = new FormData(form);
 
-  // Create the gossip object with title and description fields
-  console.log(user);
-  
+  const user = navigator.userAgent;
+
   const gossip = {
     title: formData.get("title"),
-    description: formData.get("description")
+    description: formData.get("description"), user
   };
 
     try {

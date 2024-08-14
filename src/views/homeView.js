@@ -24,5 +24,8 @@ return html`
           </li>`): html`<p>Все още няма клюки</p>`}
         </ul>
       </section>
+      <div id="post-btn">
+        <a href="/post">+</a>
+    </div>
 `
 }

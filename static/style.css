@@ -77,8 +77,12 @@ footer {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
-    bottom: 0;
+  position: fixed; /* Stick the footer to the bottom */
+  bottom: 0; /* Align it to the bottom of the viewport */
+  left: 0; /* Ensure it stays to the left of the viewport */
+  z-index: -1;
 }
+
 #post-btn {
     background: #b5e8e8;
   color: #272343;
@@ -119,9 +123,19 @@ footer {
     color: #415676;
     background-color: #e3f6f5;
     padding-top: 50%;
-    padding-bottom: 55%;
+    padding-bottom: 100%;
     font-size: 30px;
     margin: 0;
+}
+#post-gossip input{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: #b5e8e8;
 }
 #post-gossip textarea{
     width: 80%;
@@ -215,4 +229,9 @@ h3{
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+#postA{
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: bold;
+  font-style: normal;
 }
