@@ -27,15 +27,13 @@ async function onSubmit(e){
   const formData = new FormData(form);
 
   const userLocation = navigator.geolocation.getCurrentPosition((position) => {
-    return {
-      latitude: position.coords.latitude,
-      longitude: position.coords.longitude
-    }
+    return [ position.coords.latitude,  position.coords.longitude]
   })
 
   const gossip = {
     title: formData.get("title"),
-    description: formData.get("description"), userLocation
+    description: formData.get("description"), 
+    userInfo : JSON.stringify(userLocation)
   };
 
     try {
