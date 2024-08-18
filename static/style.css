@@ -224,13 +224,121 @@ footer {
     margin-right: 15px;
     margin-left: 15px;
 }
+.gossip-info h1{
+  margin-bottom: 5px;
+}
+.gossip-info span{
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 h3{
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-#postA{
+.guest, .user{
   font-family: "Hachi Maru Pop", cursive;
   font-weight: bold;
   font-style: normal;
+  font-size: 15px;
+}
+#login, #register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #415676;
+  background-color: #e3f6f5;
+  padding-top: 30%;
+  padding-bottom: 100%;
+  font-size: 20px;
+  margin: 0;
+}
+#login h2, #register h2{
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+div.form{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+form.login-form, form.register-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form.login-form input, form.register-form input{
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  background: #b5e8e8;
+}
+form.login-form button, form.register-form button{
+  background: #b5e8e8;
+  color: #415676;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  font-style: italic;
+}
+form.login-form a, form.register-form a{
+  text-decoration: none;
+  color: #05a8a8;
+  font-weight: bold;
+}
+p.message{
+  margin-top: 20px;
+}
+div.home-user{
+  color: #272343;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:space-around;
+width: 100%;
+text-align: left;
+}
+#welcome{
+  font-family: bad script;
+}
+div.home-user div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.home-user span{
+font-style: italic;
+}
+div.home-user select{
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  background: #b5e8e89e;
 }
