@@ -25,7 +25,7 @@ const endpoints = {
     
     const userData = {
         username: username.username,
-        objectId: result.objectId,
+        objectId: username.id,
         sessionToken: result.sessionToken
     };
 

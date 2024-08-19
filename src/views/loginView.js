@@ -38,11 +38,15 @@ const password = String(formData.get('password').trim())
 if (!username || !password) {
 return alert('Всички полета са задължителни!')
 }
-const data = {
-username,
-password,
-}
+
 const users = Object.values(await userUtils.getAll())[0]
+
+const id = users.find(x => x.username === username).objectId
+const data = {
+  id,
+  username,
+  password,
+  }
 
 if (!users.find(x => x.username === data.username)) {
 return alert('Невалиден username!')
@@ -51,6 +55,7 @@ if (!users.find(x => x.password === data.password)) {
 return alert('Невалидна парола!')
 }
 await userUtils.login(data)
+
 ctx.goTo('/')
 ctx.updateNav()
 }

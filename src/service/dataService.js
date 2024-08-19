@@ -14,8 +14,12 @@ async function createGossip(data){
 async function getGossipById(id){
     return await api.get(host + urls.getAllGossips + `/${id}`);
 }
+async function likeGossip(id, data) {
+    return await api.put(host + urls.getAllGossips + `/${id}`, data);
+}
 export const dataService = {
     getAllGossips,
     createGossip,
     getGossipById,
+    likeGossip
 }
