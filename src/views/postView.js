@@ -43,7 +43,10 @@ async function onSubmit(e){
   }
 
   let date = new Date();
-  const dateStr = date.toISOString();
+  const currentDate = new Date();
+  const offset = currentDate.getTimezoneOffset() * 60000; // Convert minutes to milliseconds
+  const date1 = new Date(currentDate.getTime() - offset);
+  const dateStr = date1.toISOString();
   date = dateStr.slice(0, 10) + " " + dateStr.slice(11, 16);
   const author = userService.getUser().username;
 

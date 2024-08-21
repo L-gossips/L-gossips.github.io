@@ -17,9 +17,13 @@ async function getGossipById(id){
 async function likeGossip(id, data) {
     return await api.put(host + urls.getAllGossips + `/${id}`, data);
 }
+async function commentGossip(id, data) {
+    return await api.put(host + urls.getAllGossips + `/${id}`, data);
+}
 export const dataService = {
     getAllGossips,
     createGossip,
     getGossipById,
-    likeGossip
+    likeGossip,
+    commentGossip
 }

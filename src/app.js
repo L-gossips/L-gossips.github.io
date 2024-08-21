@@ -1,6 +1,7 @@
 import page from "../lib/page/page.mjs"
 import { userService } from "./service/userService.js";
 import { userUtils } from "./utils/userUtils.js";
+import { commentView } from "./views/commentView.js";
 import { homeView } from "./views/homeView.js"
 import { loginView } from "./views/loginView.js";
 import { postView } from "./views/postView.js"
@@ -9,6 +10,7 @@ import { registerView } from "./views/registerView.js";
 page(updateCtx);
 page("/", homeView)
 page("/post", postView)
+page("/comment/:id" , commentView)
 page("/register", registerView)
 page("/login", loginView)
 page("/logout", logout)
