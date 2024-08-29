@@ -50,6 +50,6 @@ if (password !== rePass) {
 return alert('Паролите не съвпадат!')
 }
 await userUtils.register(username, password)
-ctx.goTo('/')
+ctx.goTo('/home')
 ctx.updateNav()
 }

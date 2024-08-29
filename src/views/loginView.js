@@ -56,6 +56,6 @@ return alert('Невалидна парола!')
 }
 await userUtils.login(data)
 
-ctx.goTo('/')
+ctx.goTo('/home')
 ctx.updateNav()
 }
