@@ -19,7 +19,8 @@ export async function homeView(content) {
 
 function renderTemplate(gossips) {
   const user = userService.getUser();
-
+    document.querySelector("nav").style.display = "flex"
+    document.querySelector("footer").style.display = "flex"
   return html`
     ${user
       ? html`

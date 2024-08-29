@@ -16,6 +16,7 @@ function getUserToken(){
     const user = getUser();
     return user ? user.accessToken : null;
 }
+
 export const userService = {
     setUser,
     getUser,
